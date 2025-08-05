@@ -1,0 +1,30 @@
+Microsoft Windows [Version 10.0.26100.4770]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\kiyoko.takewaki\Teishutsu>mkdir git_challenge
+
+C:\Users\kiyoko.takewaki\Teishutsu>cd git_challenge
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git init
+Initialized empty Git repository in C:/Users/kiyoko.takewaki/Teishutsu/git_challenge/.git/
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>echo "Hello, world!" >> hello.world.txt
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git add hello.world.txt
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git commit -m "hello_world.txtを追加"
+[main (root-commit) c24f376] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.world.txt
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>echo "こんにちは、世界！" >> hello.world.txt
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git add hello.world.txt
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git commit -m "日本語訳を追記"
+[main b16d972] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+C:\Users\kiyoko.takewaki\Teishutsu\git_challenge>git log --oneline
+b16d972 (HEAD -> main) 日本語訳を追記
+c24f376 hello_world.txtを追加
